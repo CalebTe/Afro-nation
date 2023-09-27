@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: red;
+    /*margin-left: 400px;
+    */padding: 50px;
+    transition: ease-in-out 1.5s;
+    -webkit-transition: ease-in-out 1.5s;
+    -moz-transition: ease-in-out 1.5s;
+    -ms-transition: ease-in-out 1.5s;
+    -o-transition: ease-in-out 1.5s;
+}
+/* .container{
+    max-width: 100%;
+    background-color: yellow;
+    height: 400px;
+    display: none; 
+    visibility: hidden; 
+    position: fixed; 
+    top: 50%;
+    right: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container p{
+    line-height: 30px;
+} */
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+ /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+  }
+
+
+  .demo {
+    background: #000;
+  }
+
+  .min {
+    background: #e78629;
+    color: white;
+  }
+
+.min600 {
+  width: 80%;
+  /* min-width: 400px; */
+  max-width: 600;
+}
+
+
+.section{
+  /* background-color: blue; */
+  /* padding: 20px; */
+  height: 400px;
+  /* width: 50%; */
+  display: grid; 
+  grid-template-columns:repeat(2, 35%) ;
+}
+
+.box1{
+  background-color: orange;
+}
+
+.box2{
+  background-color: green;
+  grid-column: span 1;
+}
+
+.box3{
+  background-color: black;
+  grid-column: span 3;
+}
+
+
+@media screen and (max-width:800px) {
+  .section{
+    grid-template-columns: repeat(2, 100%);
+  }
+}
+@media screen and (max-width:500px) {
+  .section{
+    grid-template-columns: repeat(2, 100%);
+  }
+
+  .box1{
+    grid-column:  span 3;
+  }
+
+  .box2{
+  grid-column: span 3;
+  }
+}
+
